@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-qiniu",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -16,6 +16,10 @@
   },
   "author": "",
   "license": "MIT",
+  "dependencies": {
+    "node-qiniu": "^6.1.6",
+    "walk": "^2.3.9"
+  },
   "devDependencies": {
     "broccoli-asset-rev": "^1.0.0",
     "broccoli-ember-hbs-template-compiler": "^1.6.1",
@@ -33,7 +37,9 @@
   },
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "qiniu",
+    "deploy"
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"

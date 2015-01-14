@@ -1,17 +1,34 @@
-# Ember-cli-qiniu
+# ember-cli-qiniu
 
-This README outlines the details of collaborating on this Ember addon.
+Deploy Ember CLI App to Qiniu(http://www.qiniu.com).
+
+1. Creating a build of your Ember CLI App.
+2. Uploading to Qiniu.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```shell
+$ npm install --save-dev ember-cli-qiniu
+```
 
-## Running
+## Setup
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+### Copy blueprint
+
+```shell
+$ ember generate qiniu
+```
+
+This task should generate a `qiniu.js` in your App's `config` directory.
+
+### Deploy
+
+```shell
+$ ember qiniu
+```
+
+It take an optional `--environment=[env]` flag, to determin which env of your `qiniu.js` is used.
+Default is `production`.
 
 ## Running Tests
 
@@ -19,7 +36,5 @@ This README outlines the details of collaborating on this Ember addon.
 * `ember test --server`
 
 ## Building
-
-* `ember build`
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
